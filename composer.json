@@ -1,0 +1,51 @@
+{
+    "name": "brewdigital/statamic-cloudflare-addon",
+    "license": "MIT",
+    "description": "",
+    "keywords": [
+        "statamic",
+        "statamic-addon",
+        "statamic-plugin",
+        "statamic-cache",
+        "cloudflare"
+    ],
+    "require": {
+        "php": "^8.0",
+        "statamic/cms": "^5.0",
+        "cloudflare/sdk": "^1.2"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^v9.0.0",
+        "phpunit/phpunit": "^9.6|^10.4|^11.0"
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "autoload": {
+        "psr-4": {
+            "BrewDigital\\StatamicCloudflareAddon\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "BrewDigital\\StatamicCloudflareAddon\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Statamic Cloudflare",
+            "description": "Statamic Cloudflare addon"
+        },
+        "laravel": {
+            "providers": [
+                "BrewDigital\\StatamicCloudflareAddon\\ServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "pixelfear/composer-dist-plugin": true
+        }
+    }
+}

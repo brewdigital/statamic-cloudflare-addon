@@ -1,0 +1,13 @@
+fields:
+  -
+    handle: zones
+    field:
+      type: select
+      display: 'Zone'
+      options: []
+      multiple: true
+  -
+    handle: url
+    field:
+      type: text
+      display: 'URL'

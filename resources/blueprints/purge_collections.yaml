@@ -1,0 +1,15 @@
+fields:
+  -
+    handle: zones
+    field:
+      type: select
+      display: 'Zone'
+      options: []
+      multiple: true
+  -
+    handle: collections
+    field:
+      type: select
+      display: 'Collection'
+      options: []
+      multiple: true

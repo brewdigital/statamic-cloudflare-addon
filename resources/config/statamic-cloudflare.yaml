@@ -1,0 +1,17 @@
+token: null
+
+purge_everything_on_entry_save: true
+
+key: null
+
+email: null
+
+queued: false
+
+zones: {}
+
+enable_in_local: false
+
+enable_in_staging: false
+
+enable_in_production: false

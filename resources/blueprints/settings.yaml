@@ -1,0 +1,66 @@
+title: 'Configuration'
+tabs:
+  general:
+    display: 'General'
+    sections:
+      - fields:
+          - handle: purge_everything_on_entry_save
+            field:
+              display: 'Purge Everything on Entry Save'
+              type: toggle
+              width: 100
+          - handle: token
+            field:
+              display: 'Token'
+              type: text
+              width: 100
+          - handle: key
+            field:
+              display: 'Key'
+              type: text
+              width: 100
+          - handle: email
+            field:
+              display: 'Email'
+              type: text
+              width: 100
+          - handle: queued
+            field:
+              display: 'Queued'
+              type: toggle
+              width: 100
+          - handle: enable_in_local
+            field:
+              display: 'Enable in Local'
+              type: toggle
+              width: 33
+          - handle: enable_in_staging
+            field:
+              display: 'Enable in Staging'
+              type: toggle
+              width: 33
+          - handle: enable_in_production
+            field:
+              display: 'Enable in Production'
+              type: toggle
+              width: 33
+          - handle: zones
+            field:
+              fields:
+                - handle: domain
+                  field:
+                    display: 'Domain'
+                    type: text
+                    width: 50
+                    instructions: 'Example: google.com'
+                - handle: zone_id
+                  field:
+                    display: 'Zone ID'
+                    type: text
+                    width: 50
+              mode: table
+              reorderable: true
+              display: 'Zones'
+              type: grid
+              icon: grid
+              add_row: 'Add Zone'
